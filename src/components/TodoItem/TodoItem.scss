@@ -8,10 +8,15 @@
 }
 
 .taskHeading {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 18px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .taskDescription {
   font-size: 16px;
+  height: 68px;
+  overflow: auto;
 }

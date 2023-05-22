@@ -65,7 +65,7 @@ const HomePage = () => {
             <Row>
                 {todoItems.map(
                     ({title, description, id, completed}, index) => (
-                        <Col xs={4} key={index}>
+                        <Col xs={6} lg={4} key={index}>
                             <TodoItem
                                 key={index}
                                 id={id}
@@ -88,13 +88,13 @@ const HomePage = () => {
     return (
 
         <>
-            <h2 className='text-center mt-5 mb-5 text-uppercase fw-bold'>Todo List</h2>
+            <h2 className='d-none d-md-block text-center mt-5 mb-5 text-uppercase fw-bold'>Todo List</h2>
             <Container>
                 <Row>
-                    <Col xs={4}>
+                    <Col md={4} className="pb-5 pt-4 pb-md-0 pt-md-0">
                         <TodoForm handleCreate={createTodoItem} handleClearStorage={removeAllTodos}/>
                     </Col>
-                    <Col xs={8}>
+                    <Col md={8}>
                         <ItemsContainerWithLoader/>
                     </Col>
                 </Row>

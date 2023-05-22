@@ -12,7 +12,7 @@ function App() {
         <>
             <Header/>
 
-            <main className='pb-4'>
+            <main className="pb-4">
 
                 <Routes>
                     <Route path="/" element={<HomePage />}/>

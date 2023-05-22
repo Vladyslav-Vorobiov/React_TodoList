@@ -25,8 +25,8 @@ const TodoForm = ({handleCreate, handleClearStorage}) => {
         initialValues: formInitialValues,
         validationSchema: formValidationRules,
         onSubmit: values => {
-            handleCreate(values)
-            formik.resetForm()
+            handleCreate(values);
+            formik.resetForm();
         }
     });
 
@@ -62,7 +62,7 @@ const TodoForm = ({handleCreate, handleClearStorage}) => {
                     <div style={{color: "tomato"}}>{formik.errors.description}</div>
                 ) : null}
             </Form.Group>
-            <div className='d-flex justify-content-between'>
+            <div className='d-flex flex-column flex-lg-row justify-content-between flex-wrap gap-3'>
                 <Button type="submit" variant="success">Create Task!</Button>
                 <Button type="reset" variant="warning" onClick={formik.resetForm}>Clear
                     Form</Button>

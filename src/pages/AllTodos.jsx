@@ -36,7 +36,7 @@ const AllTodos = () => {
             <Row>
                 {todoItems.map(
                     ({title, description}, index) => (
-                        <Col xs={4} key={index}>
+                        <Col xs={6} lg={4} key={index}>
                             <div className="taskWrapper">
                                 <div className="taskHeading fw-bold">{title}</div>
                                 <hr/>
