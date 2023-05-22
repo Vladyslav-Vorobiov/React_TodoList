@@ -80,7 +80,7 @@ const HomePage = () => {
                 )}
             </Row>
             :
-            <p className='text-center fs-5 fw-bold mt-5'>Please create your first task...</p>
+            <p className='text-center fs-5 fw-bold mt-md-5'>Please create your first task...</p>
     );
 
     const ItemsContainerWithLoader = withLoader(getTodos, isLoading);
@@ -90,11 +90,11 @@ const HomePage = () => {
         <>
             <h2 className='d-none d-md-block text-center mt-5 mb-5 text-uppercase fw-bold'>Todo List</h2>
             <Container>
-                <Row>
-                    <Col md={4} className="pb-5 pt-4 pb-md-0 pt-md-0">
+                <Row className="pt-4 pt-md-0">
+                    <Col md={4} >
                         <TodoForm handleCreate={createTodoItem} handleClearStorage={removeAllTodos}/>
                     </Col>
-                    <Col md={8}>
+                    <Col md={8} className="pt-5 pt-md-0">
                         <ItemsContainerWithLoader/>
                     </Col>
                 </Row>

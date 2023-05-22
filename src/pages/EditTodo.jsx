@@ -42,10 +42,10 @@ const EditTodo = () => {
     const EditFormWithLoader = withLoader(EditTodoForm, isLoading)
 
     return (
-            <Container className="mt-5">
+            <Container>
                 <Row className="justify-content-center align-items-center">
-                    <Col xs={4}>
-                        <h2 className="text-center fw-bold mb-4">Edit Todo Item #{id}</h2>
+                    <Col xs={12} md={8} xl={4}>
+                        <h3 className="text-center fw-bold mb-4 mt-4">Edit Todo Item #{id}</h3>
                         <EditFormWithLoader item={singleItem} handleCancel={redirectHome} handleSave={saveChanges}/>
                     </Col>
                 </Row>
